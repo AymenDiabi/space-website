@@ -14,3 +14,10 @@ backdrop-filter: blur(10.3px);
 -webkit-backdrop-filter: blur(10.3px);
 border: 1px solid rgba(255, 255, 255, 0.01);
 }
+
+@media (max-width: 640px) {
+  #hero {
+  background-image: url('../assets/home/background-home-mobile.jpg');
+  background-position: center;
+  }
+}

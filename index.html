@@ -12,29 +12,57 @@
     <link href="./css/style.css" rel="stylesheet">
     <title>BARYON</title>
   </head>
-  <body>
+  <body class="m-0 p-0 box-border">
     <!-- Hero Section -->
-    <section id="hero" class="h-[100vh] m-0">
+    <section id="hero" class="h-full">
       <!-- Navigation -->
       <nav class="pl-8 pt-4 h-12">
         <!-- Navigation Container -->
-        <div class="flex justify-between gap-4 items-center max-w-full">
+        <div class="relative flex justify-between gap-4 items-center max-w-full">
           <!-- Image -->
-          <div class="pr-4 z-20">
+          <a href="#" class="pr-4 z-20">
             <img src="assets/shared/logo.svg" alt="Logo" class="h-12 w-12">
-          </div>
+          </a>
+          <!-- Divider -->
+          <div class="absolute h-[1px] w-full max-w-[480px] bg-white flex-grow-0 flex-shrink opacity-25 left-28 hidden"></div>
           <!-- Navigation Links Box -->
-          <div class="relative flex items-center justify-center gap-12 glassmorphism flex-auto max-w-3xl py-8 pl-8 pr-24 font-sans">
-            <!-- Divider -->
-            <div class="absolute top-[50%] -left-[59%] h-[1px] w-[30rem] max-w-[480px] bg-white opacity-25 z-0 pl-16"></div>
+          <div class="relative flex items-center justify-center gap-12 glassmorphism flex-auto max-w-3xl py-8 pl-8 pr-24 font-sans hidden">
             <!-- Navigation Links -->
+            <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10">
               <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">00</span>Home</a>
-            <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">01</span>Destination</a>
-            <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">02</span>Crew</a>
-            <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">03</span>Technology</a>
+              <div class="absolute w-full h-[2px] group-hover:bg-white"></div>
+            </div>
+            <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10">
+              <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">01</span>Destination</a>
+              <div class="absolute w-full h-[2px] group-hover:bg-white"></div>
+            </div>
+            <div class="group relative flex flex-col justify-between space-y-[3.45rem]">
+              <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">02</span>Crew</a>
+              <div class="absolute w-full h-[2px] group-hover:bg-white"></div>
+            </div>
+            <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10">
+              <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">03</span>Technology</a>
+              <div class="absolute w-full h-[2px] group-hover:bg-white"></div>
+            </div>
           </div>
         </div>
+        
       </nav>
+      <!-- Hero Container -->
+      <div class="container flex flex-col justify-between items-center max-w-5xl px-6 py-4 mt-12 mx-auto space-y-16 xl:flex-row xl:space-y-0 xl:space-x-8">
+        <!-- Hero Content -->
+        <div class="flex flex-col space-y-4 items-center">
+            <h3 class="text-lightBlue uppercase tracking-widest text-2xl">So, you want to travel to</h3>
+            <div class="text-white font-serif text-8xl uppercase tracking-wider pt-4 pb-4">
+              Space
+            </div>
+            <p class="text-lightBlue text-2xl font-400 leading-10 tracking-wide text-center">
+              Let's face it; if you want to go to space, you might as well geniuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!
+            </p>
+        </div>
+        <!-- Button -->
+        <a href="#" class="flex justify-center items-center h-40 w-40 uppercase bg-white font-serif text-darkBlue p-8 text-2xl rounded-full outline-solid outline-8 outline-lime-500">Explore</a>
+      </div>
     </section>
   </body>
 </html>
