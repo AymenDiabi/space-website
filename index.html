@@ -12,9 +12,9 @@
     <link href="./css/style.css" rel="stylesheet">
     <title>BARYON</title>
   </head>
-  <body class="m-0 p-0 box-border">
+  <body>
     <!-- Hero Section -->
-    <section id="hero" class="h-full">
+    <section id="hero" class="h-full md:h-[100vh] md:overflow-y-hidden">
       <!-- Navigation -->
       <nav class="pl-8 pt-4 h-12">
         <!-- Navigation Container -->
@@ -30,38 +30,44 @@
             <!-- Navigation Links -->
             <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10">
               <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">00</span>Home</a>
-              <div class="absolute w-full h-[2px] group-hover:bg-white"></div>
+              <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
             </div>
             <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10">
               <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">01</span>Destination</a>
-              <div class="absolute w-full h-[2px] group-hover:bg-white"></div>
+              <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
             </div>
             <div class="group relative flex flex-col justify-between space-y-[3.45rem]">
               <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">02</span>Crew</a>
-              <div class="absolute w-full h-[2px] group-hover:bg-white"></div>
+              <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
             </div>
             <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10">
               <a href="#" class="uppercase text-white tracking-widest text-md"><span class="font-bold pr-3">03</span>Technology</a>
-              <div class="absolute w-full h-[2px] group-hover:bg-white"></div>
+              <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
             </div>
           </div>
         </div>
         
       </nav>
       <!-- Hero Container -->
-      <div class="container flex flex-col justify-between items-center max-w-5xl px-6 py-4 mt-12 mx-auto space-y-16 xl:flex-row xl:space-y-0 xl:space-x-8">
+      <div class="container h-full flex flex-col justify-between items-center max-w-6xl px-6 py-8 mt-12 mx-auto space-y-16 md:flex-row md:space-y-0 md:space-x-8 md:py-10">
         <!-- Hero Content -->
         <div class="flex flex-col space-y-4 items-center">
-            <h3 class="text-lightBlue uppercase tracking-widest text-2xl">So, you want to travel to</h3>
-            <div class="text-white font-serif text-8xl uppercase tracking-wider pt-4 pb-4">
+            <h3 class="w-full  text-lightBlue uppercase tracking-widest text-3xl md:self-left">So, you want to travel to</h3>
+            <div class="text-white w-full font-serif text-9xl uppercase tracking-wider pt-4 pb-4 md:text-left">
               Space
             </div>
-            <p class="text-lightBlue text-2xl font-400 leading-10 tracking-wide text-center">
+            <p class="text-lightBlue text-xl font-400 leading-8 tracking-wide text-center md:text-left md:max-w-md">
               Let's face it; if you want to go to space, you might as well geniuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!
             </p>
         </div>
-        <!-- Button -->
-        <a href="#" class="flex justify-center items-center h-40 w-40 uppercase bg-white font-serif text-darkBlue p-8 text-2xl rounded-full outline-solid outline-8 outline-lime-500">Explore</a>
+        <!-- Button Box -->
+        <div class="relative flex items-center justify-center group h-48 w-48  bg-white rounded-full">
+          <!-- Button -->
+          <a href="#" class="flex justify-center items-center h-full w-full uppercase font-serif text-darkBlue text-2xl bg-white rounded-full">
+            Explore
+          </a>
+          <div class="absolute h-full w-full p-20 bg-white rounded-full group-hover:border-[6rem] group-hover:border-white opacity-10 duration-200"></div>
+        </div>
       </div>
     </section>
   </body>
