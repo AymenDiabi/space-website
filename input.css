@@ -15,9 +15,23 @@ backdrop-filter: blur(10.3px);
 border: 1px solid rgba(255, 255, 255, 0.01);
 }
 
-@media (max-width: 640px) {
+.neon:hover {
+  text-shadow:
+      0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff;
+}
+
+@media (max-width: 480px) {
   #hero {
   background-image: url('../assets/home/background-home-mobile.jpg');
+  background-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+  background-image: url('../assets/home/background-home-tablet.jpg');
   background-position: center;
   }
 }
