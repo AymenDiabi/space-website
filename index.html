@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
 
+    <script src="main.js" defer></script>
+
     <link href="./css/style.css" rel="stylesheet">
     <title>BARYON</title>
   </head>
@@ -45,8 +47,39 @@
               <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
             </div>
           </div>
+          <!-- Hamburger Menu -->
+          <button id="menu-btn" type="button" class="z-40 block self-end px-8 hamburger sm:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
         </div>
-        <!-- @todo Mobile Navigation -->
+        
+        <!-- Mobile Menu -->
+        <div id="menu" class="absolute hidden p-6 h-full w-3/4 glassmorphism right-0 top-0 z-50">
+          <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+            <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10 neon duration-200">
+              <a href="#" class="uppercase text-white tracking-widest text-sm md:text-base"><span
+                  class="font-bold pr-3">00</span>Home</a>
+              <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
+            </div>
+            <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10 neon duration-200">
+              <a href="#" class="uppercase text-white tracking-widest text-sm md:text-base"><span
+                  class="font-bold pr-3">01</span>Destination</a>
+              <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
+            </div>
+            <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10 neon duration-200">
+              <a href="#" class="uppercase text-white tracking-widest text-sm md:text-base "><span
+                  class="font-bold pr-3">02</span>Crew</a>
+              <div class="absolute w-full h-[2px] group-hover:bg-white duration-200 "></div>
+            </div>
+            <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10 neon duration-200">
+              <a href="#" class="uppercase text-white tracking-widest text-sm md:text-base"><span
+                  class="font-bold pr-3">03</span>Technology</a>
+              <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
+            </div>
+          </div>
+        </div>
         
       </nav>
       <!-- Hero Container -->
