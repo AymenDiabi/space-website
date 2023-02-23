@@ -13,7 +13,7 @@
 
     <script src="../main.js" defer></script>
 
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <title>BARYON</title>
   </head>
 
@@ -26,7 +26,7 @@
         <div class="relative flex justify-between gap-4 items-center max-w-full">
           <!-- Image -->
           <a href="#" class="pt-6 sm:pt-0 pr-4 z-20">
-            <img src="../assets/shared/logo.svg" alt="Logo" class="h-12 w-12">
+            <img src="./assets/shared/logo.svg" alt="Logo" class="h-12 w-12">
           </a>
           <!-- Divider -->
           <div class="absolute h-[1px] w-full max-w-[480px] bg-white flex-grow-0 flex-shrink opacity-25 left-28 hidden">
@@ -36,7 +36,7 @@
             class="relative hidden font-sans sm:flex items-center justify-center gap-8 px-14 glassmorphism md:flex-auto md:max-w-3xl py-8 md:gap-12 lg:pl-8 lg:pr-24">
             <!-- Navigation Links -->
             <div class="group relative flex flex-col justify-between space-y-[3.45rem] z-10 neon duration-200">
-              <a href="../index.html" class="uppercase text-white tracking-widest text-sm md:text-base"><span
+              <a href="./index.html" class="uppercase text-white tracking-widest text-sm md:text-base"><span
                   class="hidden md:inline-block font-bold pr-3">00</span>Home</a>
               <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
             </div>
@@ -88,14 +88,48 @@
       </nav>
       <!-- Destination Container -->
       <div
-        class="container h-full flex flex-col sm:gap-8 justify-between items-center max-w-xs mt-16 sm:mt-24 px-6 pt-8 pb-20 md:mt-10 mx-auto space-y-16 md:flex-row md:py-10">
+        class="container h-full flex flex-col  justify-center items-center max-w-6xl mt-10 sm:mt-24 px-6 pt-8 pb-20 md:mt-10 mx-auto space-y-4 md:flex-row md:py-10">
         <!-- Destination Content -->
-        <div class="flex flex-col gap-4 justify-center items-center max-w-xs">
-          <h4 class="text-white text-lg uppercase tracking-widest"><span class="font-bold text-gray-800 pr-4 tracking-widest">01</span> Pick your destination</h4>
-          <img src="../assets/destination/image-moon.webp" alt="image-moon">
+        <div class="flex flex-col gap-8 justify-center items-center max-w-xs">
+          <h4 class="text-white text-xl uppercase tracking-[0.15em]"><span class="font-bold opacity-25 pr-4 tracking-widest">01</span> Pick your destination</h4>
+          <div class="">
+            <img class="w-52" src="../assets/destination/image-moon.webp" alt="image-moon">
+          </div>
+        </div>
+        <!-- Info Box -->
+        <div class="flex flex-col justify-center">
+          <!-- Planets Box -->
+        <div
+          class="relative flex font-sans items-center justify-center gap-8 px-14  md:flex-auto md:max-w-3xl py-8 md:gap-12 lg:pl-8 lg:pr-24">
+          <!-- Planets Links -->
+          <div class="group relative cursor-pointer flex flex-col space-y-7 z-10 neon duration-200">
+            <p class="uppercase text-white tracking-widest">Moon</p>
+            <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
+          </div>
+          <div class="group relative cursor-pointer flex flex-col justify-between space-y-7 z-10 neon duration-200">
+            <p class="uppercase text-white tracking-widest">Mars</p>
+            <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
+          </div>
+          <div class="group relative cursor-pointer flex flex-col justify-between space-y-7 z-10 neon duration-200">
+            <p class="uppercase text-white tracking-widest ">Europa</p>
+            <div class="absolute w-full h-[2px] group-hover:bg-white duration-200 "></div>
+          </div>
+          <div class="group relative cursor-pointer flex flex-col justify-between space-y-7 z-10 neon duration-200">
+            <p class="uppercase text-white tracking-widest">Titan</p>
+            <div class="absolute w-full h-[2px] group-hover:bg-white duration-200"></div>
+          </div>
+        </div>
+        <!-- Description Box -->
+        <div class="flex flex-col justify-center gap-8">
+          <!-- Description Content -->
+        <h2 class="text-6xl font-serif text-white uppercase tracking-wider text-center">Moon</h2>
+        <p class="text-lightBlue text-center leading-7">
+          See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+        </div>
+        
         </div>
       </div>
     </section>
   </body>
-
 </html>
