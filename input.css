@@ -34,6 +34,13 @@ backdrop-filter: blur(20px);
     0 0 21px #fff;
 }
 
+.active-neon {
+  text-shadow:
+      0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff;
+}
+
 @media (max-width: 768px) {
   #hero {
   background-image: url('../assets/home/background-home-tablet.jpg');
