@@ -12,6 +12,11 @@
   background-size: cover;
 }
 
+#crew {
+  background-image: url('../assets/crew/background-crew-desktop.jpg');
+  background-size: cover;
+}
+
 .glassmorphism {
   /* From https://css.glass */
 background: rgba(255, 255, 255, 0.06);
@@ -53,6 +58,12 @@ backdrop-filter: blur(20px);
   background-position: center;
   background-size: cover;
   }
+
+  #crew {
+  background-image: url('../assets/crew/background-crew-tablet.jpg');
+  background-position: center;
+  background-size: cover;
+}
 }
 
 @media (max-width: 480px) {
@@ -67,6 +78,13 @@ backdrop-filter: blur(20px);
   background-position: center;
   background-size: cover;
   }
+
+  #crew {
+  background-image: url('../assets/crew/background-crew-mobile.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
 }
 
 /* Hamburger Menu */
